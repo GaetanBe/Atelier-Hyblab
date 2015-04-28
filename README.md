@@ -1,6 +1,6 @@
 # Atelier Hyblab - Projet fini
 
-[Imgur](http://i.imgur.com/LrRj6EA.png)
+![Imgur](http://i.imgur.com/LrRj6EA.png)
 
 ## Description
 Ceci est le dépôt de l'atelier d'initiation au Web organisé en préparation du Hyblab pour les élèves débutant en Web.
