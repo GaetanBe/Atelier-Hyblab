@@ -1,12 +1,15 @@
 # Atelier Hyblab - Projet fini
 
-![alt tag](http://hpics.li/bad9dea)
+[Imgur](http://i.imgur.com/LrRj6EA.png)
 
 ## Description
 Ceci est le dépôt de l'atelier d'initiation au Web organisé en préparation du Hyblab pour les élèves débutant en Web.
 
 ## Comment ?
 Le projet est découpé en 7 étapes.
+Pour cloner une étape :
+
+`git clone -b step<no etape> https://github.com/antoinechalifour/Atelier-Hyblab`
 
 ### Etape 0
 Création du projet, explications sur bower, npm, et l'architecture du projet.
