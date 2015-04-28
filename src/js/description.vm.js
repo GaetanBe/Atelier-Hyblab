@@ -14,6 +14,7 @@
     self.$view = $('#description');
 
     self.model.on('timetable:selected', self.render.bind(self));
+    self.model.on('timetable:newactivity', self.renderActivity.bind(self));
   }
 
   DescriptionViewModel.prototype.render = function(data){
@@ -36,8 +37,31 @@
       .fadeIn();
 
     self.$activityList = $('#activity-list');
-    self.$newActivityText = $('description-new-activity-text');
-    self.$newActivityHours = $('description-new-activity-hours');
+    self.$newActivityText = $('#description-new-activity-text');
+    self.$newActivityHours = $('#description-new-activity-hours');
+    self.$newActivityText.on('keyup', self.onKeyup.bind(self));
+    self.$newActivityHours.on('keyup', self.onKeyup.bind(self));
+  };
+
+  DescriptionViewModel.prototype.renderActivity = function(newActivity){
+    var self = this;
+    var html = self.templateActivity(newActivity);
+    self.$activityList
+      .append(html)
+      .children(':last')
+      .hide()
+      .fadeIn();
+  };
+
+  DescriptionViewModel.prototype.onKeyup = function(e){
+    var self = this;
+    if(e.keyCode === 13){
+      self.model.addActivity(self.currentIndex,
+      {
+        activity: self.$newActivityText.val(),
+        hours: self.$newActivityHours.val()
+      });
+    }
   };
 
   app.DescriptionViewModel = DescriptionViewModel;

@@ -1,6 +1,7 @@
-# Atelier Hyblab - Etape 5
+# Atelier Hyblab - Etape 6
 
 ## Au programme de cette étape :
 
-- Render de la description
-- description viewmodel
+- Binding dans l'autre sens
+- $.post()
+- fin du projet

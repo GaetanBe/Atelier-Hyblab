@@ -21,6 +21,7 @@
     self.$legend = $('#chartlegend');
 
     self.$canvas.on('click', self.onChartClick.bind(self));
+    self.model.on('timetable:newactivity', self.onNewActivity.bind(self));
 
     self.render();
   }
@@ -60,6 +61,15 @@
         }
       });
     }
+  };
+
+  ChartViewModel.prototype.onNewActivity = function(newActivity){
+    var self = this;
+    var index = newActivity.indexCategory;
+    var hours = newActivity.hours;
+
+    self.chart.segments[index].value += parseInt(hours);
+    self.chart.update();
   };
 
   app.ChartViewModel = ChartViewModel;

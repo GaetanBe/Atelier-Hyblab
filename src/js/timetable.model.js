@@ -27,6 +27,28 @@
     });
   };
 
+  Timetable.prototype.addActivity = function(categoryIndex, data){
+    var self = this;
+    if(self.table[categoryIndex]){
+      var dataToSend = data;
+      dataToSend.index = categoryIndex;
+
+      self.post(dataToSend)
+      .success(function(){
+        self.table[categoryIndex].activities.push({
+          label: data.activity,
+          hours: data.hours
+        });
+
+        self.emit('timetable:newactivity', {
+          indexCategory: categoryIndex,
+          label: data.activity,
+          hours: data.hours
+        });
+      });
+    }
+  };
+
   var app = window.app = window.app || {};
   app.Timetable = Timetable;
 })(window);
