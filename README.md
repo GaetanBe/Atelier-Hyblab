@@ -1,6 +1,6 @@
-# Atelier Hyblab - Etape 4
+# Atelier Hyblab - Etape 5
 
 ## Au programme de cette étape :
 
-- Vues partielles avec Handlebars
-- Chargement de l'application
+- Render de la description
+- description viewmodel
