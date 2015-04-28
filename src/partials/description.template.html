@@ -1,0 +1,23 @@
+<div><h3>{{title}}</h3></div>
+<hr>
+<div>
+  <p>{{description}}</p>
+  <p>Principales activités : </p>
+  <ul id="activity-list">
+    {{#each activities}}
+      {{> activity}}
+    {{/each}}
+  </ul>
+</div>
+<div>
+  <p>Ajouter une activité</p>
+  <div class="col-xs-8">
+    <input class="form-control" id="description-new-activity-text" placeholder="Nouvelle activité ?">
+  </div>
+  <div class="col-xs-4">
+    <div class="input-group">
+      <input class="form-control" id="description-new-activity-hours" type="number" value="1">
+      <span class="input-group-addon" id="basic-addon2">h</span>
+    </div>
+  </div>
+</div>

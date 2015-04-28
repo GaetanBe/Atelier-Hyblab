@@ -1,6 +1,8 @@
 (function($, window){
   'use strict';
 
+  var app = window.app = window.app || {};
+  
   function getRandomColor(){
     var letters = '0123456789ABC'.split('');
     var color = '#';
@@ -60,6 +62,5 @@
     }
   };
 
-  var app = window.app = window.app || {};
   app.ChartViewModel = ChartViewModel;
 })(jQuery, window);
