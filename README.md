@@ -1,7 +1,6 @@
-# Atelier Hyblab - Etape 1
+# Atelier Hyblab - Etape 2
 
 ## Au programme de cette étape :
 
-- ajout des fichiers à l'index
-- explications console
-- création du modele
+- création du module Chart qui affiche les données récupérées
+- explications sur l'aspect async et les promesses
