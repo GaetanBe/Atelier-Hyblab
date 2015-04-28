@@ -4,3 +4,4 @@
 
 - ajout des fichiers à l'index
 - explications console
+- création du modele
