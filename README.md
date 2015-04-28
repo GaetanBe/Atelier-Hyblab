@@ -1,6 +1,6 @@
-# Atelier Hyblab - Etape 3
+# Atelier Hyblab - Etape 4
 
 ## Au programme de cette étape :
 
-- Héritage
-- notre modele hérite de eventEmitter pour dire aux vues de se rafraichir
+- Vues partielles avec Handlebars
+- Chargement de l'application
