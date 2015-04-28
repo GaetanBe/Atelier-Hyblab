@@ -1,8 +1,6 @@
-# Atelier Hyblab - Etape 0
+# Atelier Hyblab - Etape 1
 
 ## Au programme de cette étape :
 
-- installation des dépendances (npm)
-- installation des dépendances (bower)
-- lancement du serveur
-- explications architecture
+- ajout des fichiers à l'index
+- explications console
