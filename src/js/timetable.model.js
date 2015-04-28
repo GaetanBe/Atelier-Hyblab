@@ -4,8 +4,11 @@
 
   function Timetable(){
     var self = this;
+    EventEmitter.call(self);
     self.table = [];
   }
+
+  Timetable.prototype = new EventEmitter;
 
   Timetable.prototype.get = function(){
     var self = this;

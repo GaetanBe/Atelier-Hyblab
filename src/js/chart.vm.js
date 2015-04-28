@@ -18,6 +18,8 @@
     self.$canvas = $('#chart');
     self.$legend = $('#chartlegend');
 
+    self.$canvas.on('click', self.onChartClick.bind(self));
+
     self.render();
   }
 
@@ -44,6 +46,18 @@
         value: value
       };
     });
+  };
+
+  ChartViewModel.prototype.onChartClick = function(e){
+    var self = this;
+    var clickedSegment = self.chart.getSegmentsAtEvent(e)[0];
+    if(clickedSegment){
+      self.model.table.forEach(function(activite, index){
+        if(clickedSegment.label === activite.label){
+          self.model.emit('timetable:selected', { index: index });
+        }
+      });
+    }
   };
 
   var app = window.app = window.app || {};
