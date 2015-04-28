@@ -1,0 +1,46 @@
+[
+  {
+    "label": "Se détendre",
+    "description": "L'ID se fatigue vite, très vite. Alors l'ID aime beaucoup se détendre, reprendre des forces, c'est important voyez vous. Il a d'ailleurs l'air de reprendre plus de forces qu'il n'en dépense !.",
+    "activities": [{
+        "label": "Boire un café",
+        "hours": "1"
+      },
+      {
+        "label": "Boire une bière",
+        "hours": "2"
+      },
+      {
+        "label": "Boire une autre bière",
+        "hours": "3"
+      },
+      {
+        "label": "Embeter un SILR",
+        "hours": "5"
+      },
+      {
+        "label": "Jouer au billard",
+        "hours": "7"
+      },
+      {
+        "label": "Faire la grasse matinée",
+      "hours": "10"
+      }]
+  },
+  {
+    "label": "Travailler",
+    "description": "L'ID n'a pas beaucoup de cours. Et pourtant, l'ID n'aime pas travailler. Pourrait-on y voir une correlation ? Seul un ID vous le dira. L'ID n'aime tellement pas les cours qu'il les sèche.",
+    "activities": [{
+        "label": "Extraction de données dans les connaissances",
+        "hours": "1"
+      },
+      {
+        "label": "Gestion informatique des connaissances",
+        "hours": "3"
+      },
+      {
+        "label": "Systèmes de raisonnement probabiliste",
+        "hours": "2"
+      }]
+  }
+]
